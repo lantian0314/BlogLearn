@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/youdao_relative"
+        >
+
+        <EditText
+            android:id="@+id/youdao_edit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <Button 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/youdao_sure"
+            android:text="确认"
+            android:layout_toRightOf="@id/youdao_edit"
+            android:layout_alignTop="@id/youdao_edit"
+            />
+          <Button 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/youdao_cancel"
+            android:text="取消"
+            android:layout_toRightOf="@id/youdao_sure"
+            android:layout_alignTop="@id/youdao_sure"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_horizontal"
+        >
+        <WebView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/youdao_web"
+            android:background="@drawable/test1"
+            android:focusable="false"    
+            />
+    </RelativeLayout>
+</LinearLayout>
